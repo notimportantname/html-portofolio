@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tegar Fadillah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" 
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h2 class="logo"><span>Tegar</span> fadillah</h2>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Vocational High <span>School Students</span></p>
+          <h1>Hi, I'm <span>Tegar</span><br />Fadillah From Indonesia</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- about -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/img.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hi, I am a student majoring in building modeling design
+              information at a vocational high school in Indonesia who have just
+              graduated and look forward to take major in computer science at
+              Top university in the world (I wish haha) so I will take a gap
+              year to get my university dream.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>AutoCad</span><br />2D Design of Building</li>
+                <li><span>SketchUp</span><br />3D Design Building</li>
+                <li><span>Web Development</span><br />Web app Development</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>June - Aug 2022</span><br />School internship at the
+                  company as a drafter
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2020</span><br />Building Engineering at vocational high
+                  school
+                </li>
+                <li><span>2017</span><br />Junior high School</li>
+                <li><span>2011</span><br />Elementary School</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hobbies -->
+    <div id="hobbies">
+      <div class="container">
+        <h1 class="sub-title">My Hobbies</h1>
+        <div class="hobbies-list">
+          <div>
+            <i class="fa-solid fa-gamepad"></i>
+            <h2>Playing a Game</h2>
+            <p>
+              I have played a lot of games such a PC Games, Mobile Games,
+              Console Games. Now i play game that called Valorant, it is a Game
+              FPS.
+            </p>
+            <a href="#">Read More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-book"></i>
+            <h2>Reading a Book</h2>
+            <p>
+              Books that i always read are science or enrichment book. I'm not
+              really into on book but for fill my time, i take the time to read.
+            </p>
+            <a href="#">Read More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-film"></i>
+            <h2>Watching a Movie</h2>
+            <p>
+              I've wathced a lot of movies. Genre that i like is an Adventure &
+              Action. i'm not really into on horror movies.
+            </p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>orangajalah142@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>+6282225550181</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/tr.f_4/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://wa.me/082225550181?text=Hi, my name is"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.youtube.com/channel/UC75Ecuj345ObS0qY51DIbFA"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+            <a
+              href="https://www.youtube.com/watch?v=0YFrGy_mzjY&t=2457s&ab_channel=GreatStack"
+              class="btn"
+              >Reference Website</a
+            >
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="emai"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- copyright -->
+      <div class="copyright">
+        <p>Copyright © Kevin. Made by Tegar Fadillah</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemeu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemeu.style.right = "0";
+      }
+      function closemenu() {
+        sidemeu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
